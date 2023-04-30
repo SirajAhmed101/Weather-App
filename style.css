@@ -1,0 +1,225 @@
+/* Fonts Link */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  /* Background-Color */
+  --primary-color: #4458dc;
+  --secondary-color: #854fee;
+  --bg-white: #fff;
+  --bg-light: #faf8ff;
+  --bg-black: #000;
+  --bg-grey: #eee;
+
+  /* Text-color */
+  --primary-text: #4458dc;
+  --secondary-text: #854fee;
+  --text-white: #fff;
+  --text-light: #faf8ff;
+  --text-black: #000;
+  --text-grey: #777;
+
+  /* Gradient */
+  --gradient: linear-gradient(to right, #4458dc 0%, #854fee 100%),
+    radial-gradient(circle at top left, #4458dc, #854fee);
+
+  /* Font Family */
+  --primary-font: "Rubik", sans-serif;
+  --secondary-font: "Roboto", sans-serif;
+}
+
+body {
+  font-family: var(--secondary-font);
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding: 8rem 0;
+}
+
+.main-btn {
+  display: inline-block;
+  padding: 0 3.3rem;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 4.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  border: solid 0.2rem transparent;
+  border-radius: 0.5rem;
+  box-shadow: 0 1rem 3rem rgb(118 85 225 / 30%);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.primary-btn {
+  background-image: var(--gradient);
+  color: var(--text-white);
+}
+.primary-btn:hover {
+  background: var(--bg-white);
+  color: var(--secondary-text);
+
+  border: solid 0.2rem var(--secondary-color);
+}
+.secondary-btn {
+  color: var(--gradient);
+  background-color: transparent;
+  /* border: solid 0.2rem var(--secondary-color); */
+}
+
+.secondary-btn:hover {
+  background-image: var(--secondary-text);
+  color: var(--text-white);
+}
+
+h1 {
+  font-family: var(--primary-font);
+  font-size: 7rem;
+  font-weight: 700;
+  line-height: 6rem;
+  margin-bottom: 2rem;
+  color: var(--text-black);
+}
+
+h2 {
+  font-family: var(--primary-font);
+  font-size: 4rem;
+  font-weight: 500;
+  /* line-height: 5.5rem; */
+  margin-bottom: 2.5rem;
+  color: var(--text-white);
+}
+h3 {
+  font-family: var(--primary-font);
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-white);
+  text-transform: uppercase;
+}
+h5 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 3.5rem;
+  color: var(--text-black);
+}
+p {
+  color: var(--text-white);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+.cloud-describ {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.weather-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.main-container {
+  padding: 2rem 5rem;
+  background-color: #000000d0;
+  border-radius: 5%;
+}
+
+.serch-city {
+  line-height: 3rem;
+  font-size: 1.6rem;
+  /* border: transparent; */
+  background-color: transparent;
+}
+.serch-city:focus {
+  outline-color: transparent;
+  background-color: transparent;
+  color: var(--text-white);
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+.serch-city::placeholder {
+  color: var(--text-light);
+}
+.input-feild {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/*Responsive Design*/
+@media (max-width: 1199.5px) {
+  h1 {
+    font-size: 5.9rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  h5 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 4rem;
+    line-height: 4.8rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+    line-height: 3.8rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+}
+
+@media (max-width: 390px) {
+}
+@media (max-width: 381px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    line-height: 3.8rem;
+  }
+}
+
+@media (max-width: 335px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 1.5rem;
+  }
+}
